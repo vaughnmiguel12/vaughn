@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f0; /* Light pink background */
+    color: #ff4d94; /* Darker pink text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #ff3366; /* Darker shade of pink for headers */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+button {
+    background-color: #ff66b2; /* Pink button */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px; /* Increased padding */
+    font-size: 1.1em; /* Larger font size */
+    cursor: pointer;
+    margin-top: 40px; /* More space above button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ff3385; /* Darker pink on hover */
+    transform: scale(1.05);
+}
+
+input[type="date"], input[type="number"], select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ff66b2;
+    font-size: 1em;
+    margin-top: 20px;
+    text-align: center;
+    width: 80%; /* Full-width inputs for consistency */
+}
+
+p, #no-message {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* Floating Heart Animation */
+@keyframes floatHeart {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-20px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Heart Styles */
+.floating-heart {
+    position: absolute;
+    color: #ff66b2;
+    opacity: 0.8;
+    animation: floatHeart 3s ease-in-out infinite;
+}
+
+/* Size Variations for Floating Hearts */
+.floating-heart.big {
+    font-size: 5rem;
+}
+
+.floating-heart.medium {
+    font-size: 3.5rem;
+}
+
+.floating-heart.small {
+    font-size: 2.5rem;
+}
+
+/* Position and Animation Variations for 20 Hearts */
+.floating-heart:nth-child(1) { left: 5%; top: 10%; animation-duration: 3.5s; }
+.floating-heart:nth-child(2) { left: 15%; top: 30%; animation-duration: 4s; }
+.floating-heart:nth-child(3) { left: 25%; top: 50%; animation-duration: 4.5s; }
+.floating-heart:nth-child(4) { left: 35%; top: 20%; animation-duration: 3s; }
+.floating-heart:nth-child(5) { left: 45%; top: 60%; animation-duration: 4.2s; }
+.floating-heart:nth-child(6) { left: 55%; top: 15%; animation-duration: 3.8s; }
+.floating-heart:nth-child(7) { left: 65%; top: 35%; animation-duration: 4.3s; }
+.floating-heart:nth-child(8) { left: 75%; top: 25%; animation-duration: 3.6s; }
+.floating-heart:nth-child(9) { left: 85%; top: 40%; animation-duration: 3.9s; }
+.floating-heart:nth-child(10) { left: 95%; top: 50%; animation-duration: 4.5s; }
+.floating-heart:nth-child(11) { left: 10%; top: 70%; animation-duration: 4.1s; }
+.floating-heart:nth-child(12) { left: 20%; top: 80%; animation-duration: 3.7s; }
+.floating-heart:nth-child(13) { left: 30%; top: 10%; animation-duration: 4.4s; }
+.floating-heart:nth-child(14) { left: 40%; top: 70%; animation-duration: 3.3s; }
+.floating-heart:nth-child(15) { left: 50%; top: 40%; animation-duration: 3.9s; }
+.floating-heart:nth-child(16) { left: 60%; top: 30%; animation-duration: 4.6s; }
+.floating-heart:nth-child(17) { left: 70%; top: 80%; animation-duration: 3.4s; }
+.floating-heart:nth-child(18) { left: 80%; top: 60%; animation-duration: 4.3s; }
+.floating-heart:nth-child(19) { left: 90%; top: 20%; animation-duration: 3.5s; }
+.floating-heart:nth-child(20) { left: 50%; top: 90%; animation-duration: 3.8s; }
+
+/* GIF Styling */
+.gif-image {
+    max-width: 90%; /* Make it responsive */
+    height: auto; /* Keep the aspect ratio */
+    display: block; /* Center the image */
+    margin: 20px auto; /* Center the GIF with some margin */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+}
